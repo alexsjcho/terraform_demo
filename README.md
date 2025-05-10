@@ -46,6 +46,43 @@ This project demonstrates the use of Terraform with AWS and GCP providers, using
    terraform apply
    ```
 
+## DEMO Scenarios
+
+This project demonstrates key capabilities that address ACME Corp's multi-cloud transition needs:
+
+### 1. Multi-Cloud Infrastructure as Code
+- **Unified Configuration**: Single Terraform configuration managing both AWS and GCP resources
+- **Consistent Resource Management**: Identical workflow for provisioning across different cloud providers
+- **Code Reusability**: Modular design with shared variables and configurations
+- **State Management**: Centralized state tracking across multiple cloud providers
+
+### 2. Security and Secrets Management
+- **HashiCorp Vault Integration**: Secure storage and management of sensitive data
+- **Provider Credentials**: Secure handling of AWS and GCP credentials
+- **Environment Variables**: Sensitive data managed through environment variables
+- **Access Control**: Granular control over who can access and modify infrastructure
+
+### 3. Infrastructure Components
+- **Compute Resources**:
+  - AWS EC2 instances with security groups
+  - GCP Compute Engine instances with firewall rules
+- **Networking**:
+  - Automated security group/firewall configuration
+  - Cross-cloud networking patterns
+- **Resource Tagging**: Consistent resource naming and tagging across providers
+
+### 4. Operational Benefits
+- **Version Control**: Infrastructure changes tracked in Git
+- **Collaboration**: Team-friendly configuration structure
+- **Documentation**: Self-documenting infrastructure code
+- **Reproducibility**: Consistent deployments across environments
+
+### 5. Migration Path
+- **Gradual Transition**: Ability to run AWS and GCP resources simultaneously
+- **Resource Parity**: Similar resource types across providers
+- **State Management**: No disruption during cloud provider changes
+- **Cost Control**: Easy comparison of resource costs across providers
+
 ## Security Notes
 
 - Never commit sensitive information to version control
