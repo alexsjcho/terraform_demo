@@ -1,0 +1,17 @@
+# AWS Configuration
+aws_region        = "us-west-2"
+aws_instance_type = "t2.micro"
+aws_ami_id        = "ami-xxxxxxxxxxxxxxxxx"  # Replace with your AMI ID
+
+# GCP Configuration
+gcp_region        = "us-central1"
+gcp_machine_type  = "e2-micro"
+gcp_project_id    = "your-project-id"        # Replace with your GCP project ID
+
+# Common Configuration
+instance_name     = "terraform-demo"
+
+# Additional variables
+db_name           = "appdb"
+db_username       = "dbadmin"
+db_password       = "REPLACE_WITH_SECURE_PASSWORD"  # Replace with a secure password 

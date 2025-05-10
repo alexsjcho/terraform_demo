@@ -3,11 +3,6 @@ variable "machine_type" {
   type        = string
 }
 
-variable "image_family" {
-  description = "GCP image family"
-  type        = string
-}
-
 variable "instance_name" {
   description = "Name of the GCP instance"
   type        = string

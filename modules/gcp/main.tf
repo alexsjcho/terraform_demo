@@ -18,7 +18,7 @@ resource "google_compute_instance" "instance" {
 
   boot_disk {
     initialize_params {
-      image_family = var.image_family
+      image = "debian-cloud/debian-11"
     }
   }
 
